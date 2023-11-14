@@ -44,6 +44,10 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }) {
     const slug = params.slug ? params.slug.join("/") : "home";
+
+    if (slug === "home") {
+        return
+    }
     
     const client = getClient();
     const { loading, error, data } = await client.query({query: PAGE_QUERY, variables: {id: slug}});
