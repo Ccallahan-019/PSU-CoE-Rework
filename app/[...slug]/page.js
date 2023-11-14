@@ -28,6 +28,8 @@ const PAGE_QUERY = gql`
     }
 `;
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
     const client = getClient();
     const { loading, error, data } = await client.query({ query: SLUG_QUERY });
