@@ -7,8 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "v": "node -v"
+    "lint": "next lint"
   },
   "dependencies": {
     "@apollo/client": "^3.8.0-rc.2",
