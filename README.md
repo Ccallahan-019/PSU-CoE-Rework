@@ -11,3 +11,24 @@ combined capabilities of the Next.js framework, the GraphQL API, and the Storybl
 
 See the project live: [PSU CoE Rework](https://psu-coe-rework.vercel.app)
 
+## Stack
+
+### Next.js v14.0.1
+
+System Requirments
+- Node.js 18.17 or later
+- macOS, Windows (including WSL), and Linux are supported
+
+Configurations Used
+- ESLint
+- Tailwind CSS
+- App Router
+
+Key Features
+- Server Side Rendering (SSR)
+- Client Components
+- Dynamic Routing
+
+
+
+
