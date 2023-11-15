@@ -106,8 +106,40 @@ Combining Next.js and Storyblok? Use this [Storyblok Next.js 13 Guide](https://w
 the **App Router** introduced in Next.js 13. If you are using an earlier version or have opted to use the **Pages Router**, check out [The Storyblok Next.js Ultimate Tutorial](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial)).
 
 
-### Deployment- Vercel
+## Deployment- Vercel
 
 This site was deployed using Vercel. If you'd like to learn more about deploying a Next.js application using Vercel, you can visit 
 [Deploying Your Next.js App](https://nextjs.org/learn-pages-router/basics/deploying-nextjs-app/deploy). This page gives step-by-step instructions on deployment, including 
 how to create a Vercel Account at https://vercel.com/signup using your GitHub account and how to import your repository at https://vercel.com/import/git.
+
+## Sources
+
+This site is a redesigned version of the Penn State University College of Engineering Website, and therefore, all content (including text, images, and video files) was sourced from 
+the current College of Engineering website, which can be found at https://www.engr.psu.edu/.
+
+## License
+
+MIT License
+
+Copyright (c) 2023 Christian Callahan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
