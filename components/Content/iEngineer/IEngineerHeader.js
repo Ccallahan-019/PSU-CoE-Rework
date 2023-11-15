@@ -3,13 +3,17 @@ import { useEffect, useState } from "react";
 
 const IEngineerHeader = ({ blok }) => {
     let mediaMatch;
+    let matched;
+
     useEffect(() => {
         mediaMatch = window.matchMedia('(max-width: 768px)'); // Media query for detecting browser window width
+        matched = mediaMatch.matches;
     })
 
-    const [ismatched, setIsMatched] = useState(mediaMatch.matches); // State used to capture boolean value corresponding to media query
+    const [ismatched, setIsMatched] = useState(matched); // State used to capture boolean value corresponding to media query
 
     useEffect(() => {
+        const mediaMatch = window.matchMedia('(max-width: 768px)'); // Media query for detecting browser window width
         const mediaHandler = (event) => {
             setIsMatched(event.matches); // Set state according to boolean value of matches property
         };
