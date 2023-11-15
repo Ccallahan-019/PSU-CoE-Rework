@@ -91,7 +91,7 @@ This makes a headless CMS far more adaptive and scalable than a traditional CMS 
 for more optimized applications.
 
 Visual Editor
-- Storyblok's **Visual Editor** enables content management to be performed, easily, visually, and in realtime. This includes drag-and-drop, preview, and asset management 
+- Storyblok's **Visual Editor** enables content management to be performed easily, visually, and in realtime. This includes drag-and-drop, preview, and asset management 
 features, along with the ability to create workflows and discussions to improve collaboration within a team.
 
 Planning on using the Storyblok Headless CMS to manage the backend of your next app? Check out these resources.
