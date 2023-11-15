@@ -78,6 +78,7 @@ https://gapi-us-browser.storyblok.com
 Adding GraphQL to your next project? Here are some helpful resources.
 - [GraphQL](https://graphql.org/)
 - [Learn GraphQL](https://www.howtographql.com/)
+
 Using GraphQL with Storyblok? Find more information at [GraphQL Content Delivery API](https://www.storyblok.com/docs/graphql-api).
 
 ### Storyblok v2.4.7
