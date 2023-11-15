@@ -89,6 +89,7 @@ to your chosen API. A headless CMS uses a decoupled architecture that seperates 
 This makes a headless CMS far more adaptive and scalable than a traditional CMS that uses a monolith/silo type structure, where the frontend and backend are woven 
 (sometimes knotted) tightly together. It also improves performance, grants increased flexibility to developers and content managers by migitating dependencies, and allows 
 for more optimized applications.
+
 Visual Editor
 - Storyblok's **Visual Editor** enables content management to be performed, easily, visually, and in realtime. This includes drag-and-drop, preview, and asset management 
 features, along with the ability to create workflows and discussions to improve collaboration within a team.
