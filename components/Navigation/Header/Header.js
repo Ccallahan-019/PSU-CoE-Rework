@@ -5,7 +5,13 @@ import Link from "next/link";
 export default function Header({ blok }) {
     const bgTransparent = "absolute w-full bg-transparent";
     const bgBackground = "absolute w-full bg-gradient-to-r from-[#001E44] from-30% via-[#1B3C76] via-[85%] to-[#000321] to-100%";
-    const [isScrolled, setIsScrolled] = useState(window.scrollY > 120 ? true : false); // Set scroll state based on how far window has been scrolled
+    let scrollValue;
+
+    useEffect(() => {
+        scrollValue = window.scrollY;
+    })
+
+    const [isScrolled, setIsScrolled] = useState(scrollValue > 120 ? true : false); // Set scroll state based on how far window has been scrolled
 
     useEffect(() => {
         function onScroll() {

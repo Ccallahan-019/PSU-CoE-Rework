@@ -2,7 +2,11 @@ import { storyblokEditable } from "@storyblok/react";
 import { useEffect, useState } from "react";
 
 const IEngineerHeader = ({ blok }) => {
-    const mediaMatch = window.matchMedia('(max-width: 768px)'); // Media query for detecting browser window width
+    let mediaMatch;
+    useEffect(() => {
+        mediaMatch = window.matchMedia('(max-width: 768px)'); // Media query for detecting browser window width
+    })
+
     const [ismatched, setIsMatched] = useState(mediaMatch.matches); // State used to capture boolean value corresponding to media query
 
     useEffect(() => {
