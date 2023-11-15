@@ -74,6 +74,7 @@ and replace `YOUR_TOKEN` with your Storyblok API token. You might also need to a
 ```
 https://gapi-us-browser.storyblok.com
 ```
+
 ![Storyblok GraphQL Playground](./public/Screenshot%202023-11-15%20125347.png)
 
 Adding GraphQL to your next project? Here are some helpful resources.
@@ -94,6 +95,8 @@ for more optimized applications.
 Visual Editor
 - Storyblok's **Visual Editor** enables content management to be performed easily, visually, and in realtime. This includes drag-and-drop, preview, and asset management 
 features, along with the ability to create workflows and discussions to improve collaboration within a team.
+
+![Storyblok Visual Editor](./public/Screenshot%202023-11-15%20125744.png)
 
 Planning on using the Storyblok Headless CMS to manage the backend of your next app? Check out these resources.
 - [Storyblok](https://www.storyblok.com/)
