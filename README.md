@@ -30,6 +30,7 @@ Key Features
  this project dynamically routes all pages (with the exception of the root page), allowing for additional 
  pages to be added using the Storyblok CMS without requiring the creation of new `page.js` files. If you 
  would like to see this functionality in action, you can find it implemented in [`[...slug]/page.js`](./app/[...slug]/page.js).
+ 
  (**App Router** required; if you are currently building a Next.js project and have opted to use the 
  **Pages Router**, see `GetStaticProps`, `GetStaticPaths`, and **Dynamic Routes** in the **Pages Router** 
  section of the [Next.js Documentation](https://nextjs.org/docs/pages/building-your-application))
