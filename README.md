@@ -40,14 +40,41 @@ Key Features
   (dynamically routed additional pages).
 - Client Components
   - Client Components are the core of this site. By using the Apollo Client, along aside an additional libary that extends Apollo's compatability 
-  with Next.js, the root layout (`RootLayout`, found in [`app/layout.js`](./app/layout.js)) uses the client wrapper imported from [`lib/ApolloProvider.js`](./lib/ApolloProvider.js) 
-  to make every component used within Storyblok a Client Component. This enables the use of states, effects, and listeners, but more importantly, 
-  allows us to take full advantage of the Live Editor built into the Storyblok CMS.
+  with Next.js, the root layout (`RootLayout`, found in [`app/layout.js`](./app/layout.js)) uses the client wrapper imported from 
+  [`lib/ApolloProvider.js`](./lib/ApolloProvider.js) to make every component used within Storyblok a Client Component. This enables the use of 
+  states, effects, and listeners, but more importantly, allows us to take full advantage of the Live Editor built into the Storyblok CMS.
 
 Building your next project using Next.js? Get started with [Next.js Installation](https://nextjs.org/docs/getting-started/installation).
 
 Looking for more Next.js information? Check out [Next.js Documentation](https://nextjs.org/docs).
 
-### GraphQL (via the Apollo Client v3.8.0)
+### GraphQL (via the Apollo Client v3.8.0-rc.2)
+
+Dependencies Required
+- `@apollo/client@rc`
+- `graphql`
+- `@apollo/experimental-nextjs-app-support` (an official Apollo Client library built to enhance the compatibility of Apollo and Next.js 13+)
+
+REST vs GraphQL
+
+Anyone building a development project using the Storyblok CMS has to make a tough decision somewhere along the line: REST, or GraphQL? On the surface, 
+this might seem like a relatively easy choice. Both the Storyblok Content Delivery API and Management API are organized around REST, and most of Storyblok's
+documentation is written with this in mind. So, why deviate?
+- Single vs. Multiple Endpoints- A typical REST API usually requires data fetching from multiple different endpoints. This is inherently slower than GraphQL, 
+where only one endpoint is required to fetch data.
+- Overfetching/Underfetching- REST APIs tend to suffer from overfetching and underfetching issues that stem from the fixed structures of their endpoints.
+Either the endpoint in question returns unnecessary data, or it doesn't return enough data, requiring more fetches to other endpoints to retrieve whatever data is 
+still needed (usually resulting in overfetching... See the problem?). On the other hand, with GraphQL, you can request exactly the data you need at any given time.
+- Strongly Typed Schemas- GraphQL uses **Schema Definition Language (SDL)** to define an API's schema. This means you always have a clear understanding of the API's 
+operations, thanks to SDL's strong type system. If you're using Storyblok, you can see this in action by using the **Storyblok GraphQL Playground**. Just use
+```
+https://gapi-browser.storyblok.com?token=YOUR_TOKEN
+```
+and replace `YOUR_TOKEN` with your Storyblok API token. You might also need to add a region specifier. For example, if you are in the US regions, you would use
+```
+https://gapi-us-browser.storyblok.com
+```
 
 ### Storyblok v2.4.7
+
+### Deployment- Vercel
