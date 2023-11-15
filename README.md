@@ -50,7 +50,7 @@ Looking for more Next.js information? Check out [Next.js Documentation](https://
 
 ### GraphQL (via the Apollo Client v3.8.0-rc.2)
 
-Dependencies Required
+Dependencies Used
 - `@apollo/client@rc`
 - `graphql`
 - `@apollo/experimental-nextjs-app-support` (an official Apollo Client library built to enhance the compatibility of Apollo and Next.js 13+)
@@ -82,5 +82,23 @@ Adding GraphQL to your next project? Here are some helpful resources.
 Using GraphQL with Storyblok? Find more information at [GraphQL Content Delivery API](https://www.storyblok.com/docs/graphql-api).
 
 ### Storyblok v2.4.7
+
+Headless CMS
+- Storyblok is a **headless CMS**. This means it is designed for back-end content management; it provides content storage, a content creator/manager interface, and access 
+to your chosen API. A headless CMS uses a decoupled architecture that seperates the frontend (design and development) and the backend (content management) of a project. 
+This makes a headless CMS far more adaptive and scalable than a traditional CMS that uses a monolith/silo type structure, where the frontend and backend are woven 
+(sometimes knotted) tightly together. It also improves performance, grants increased flexibility to developers and content managers by migitating dependencies, and allows 
+for more optimized applications.
+Visual Editor
+- Storyblok's **Visual Editor** enables content management to be performed, easily, visually, and in realtime. This includes drag-and-drop, preview, and asset management 
+features, along with the ability to create workflows and discussions to improve collaboration within a team.
+
+Planning on using the Storyblok Headless CMS to manage the backend of your next app? Check out these resources.
+- [Storyblok](https://www.storyblok.com/)
+- [Storyblok Documentation](https://www.storyblok.com/docs/guide/introduction)
+
+Combining Next.js and Storyblok? Use this [Storyblok Next.js 13 Guide](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial) to get started. (This guide uses 
+the **App Router** introduced in Next.js 13. If you are using an earlier version or have opted to use the **Pages Router**, check out [The Storyblok Next.js Ultimate Tutorial](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial)).
+
 
 ### Deployment- Vercel
