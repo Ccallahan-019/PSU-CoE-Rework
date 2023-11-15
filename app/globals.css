@@ -33,6 +33,7 @@
   html {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    color: black;
   }
 
   div::-webkit-scrollbar {
