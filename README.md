@@ -29,6 +29,6 @@ Key Features
 - Client Components
 - Dynamic Routing
 
+### GraphQL (via the Apollo Client v3.8.0-rc.2)
 
-
-
+### Storyblok v2.4.7
