@@ -77,6 +77,8 @@ https://gapi-us-browser.storyblok.com
 
 ![Storyblok GraphQL Playground](./public/Screenshot%202023-11-15%20125347.png)
 
+You can find an example of a GraphQL query made to the Apollo client in [`app/[...slug]/page.js`](./app/[...slug]/page.js) and [`app/page.js`](./app/page.js).
+
 Adding GraphQL to your next project? Here are some helpful resources.
 - [GraphQL](https://graphql.org/)
 - [Learn GraphQL](https://www.howtographql.com/)
