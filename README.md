@@ -33,7 +33,7 @@ Key Features
 
   (**App Router** required; if you are currently building a Next.js project and have opted to use the 
   **Pages Router**, see `GetStaticProps`, `GetStaticPaths`, and **Dynamic Routes** in the **Pages Router** 
-  section of the [Next.js Documentation](https://nextjs.org/docs/pages/building-your-application))
+  section of the [Next.js Pages Documentation](https://nextjs.org/docs/pages/building-your-application))
 - Server Side Rendering (SSR) and Server Side Components
   - While the use of SSR in this project is limited (a tradeoff associated with the use of the Live Editing feature of Storyblok), 
   all pages are rendered server side using [`app/page.js`](./app/page.js) (the root page) and [`[...slug]/page.js`](./app/[...slug]/page.js) 
@@ -43,6 +43,9 @@ Key Features
   with Next.js, the root layout (`RootLayout`, found in [`app/layout.js`](./app/layout.js)) uses the client wrapper imported from [`lib/ApolloProvider.js`](./lib/ApolloProvider.js) 
   to make every component used within Storyblok a Client Component. This enables the use of states, effects, and listeners, but more importantly, 
   allows us to take full advantage of the Live Editor built into the Storyblok CMS.
+
+Building your next project using Next.js? Get started with [Next.js Installation](https://nextjs.org/docs/getting-started/installation).
+Looking for more information on Next.js? Check out [Next.js Documentation](https://nextjs.org/docs).
 
 ### GraphQL (via the Apollo Client v3.8.0)
 
