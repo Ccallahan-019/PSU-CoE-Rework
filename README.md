@@ -74,6 +74,7 @@ and replace `YOUR_TOKEN` with your Storyblok API token. You might also need to a
 ```
 https://gapi-us-browser.storyblok.com
 ```
+![Storyblok GraphQL Playground](./public/Screenshot%202023-11-15%20125347.png)
 
 Adding GraphQL to your next project? Here are some helpful resources.
 - [GraphQL](https://graphql.org/)
