@@ -45,6 +45,7 @@ Key Features
   allows us to take full advantage of the Live Editor built into the Storyblok CMS.
 
 Building your next project using Next.js? Get started with [Next.js Installation](https://nextjs.org/docs/getting-started/installation).
+
 Looking for more information on Next.js? Check out [Next.js Documentation](https://nextjs.org/docs).
 
 ### GraphQL (via the Apollo Client v3.8.0)
