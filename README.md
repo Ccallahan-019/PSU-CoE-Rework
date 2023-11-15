@@ -9,5 +9,5 @@ combined capabilities of the Next.js framework, the GraphQL API, and the Storybl
 
 ![GIF of the deployed project.](./public/chrome-capture-2023-11-14.gif)
 
-See the project live: [PSU CoE Rework](psu-coe-rework.vercel.app)
+See the project live: [PSU CoE Rework](https://psu-coe-rework.vercel.app)
 
