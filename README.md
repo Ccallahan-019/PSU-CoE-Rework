@@ -103,3 +103,7 @@ the **App Router** introduced in Next.js 13. If you are using an earlier version
 
 
 ### Deployment- Vercel
+
+This site was deployed using Vercel. If you'd like to learn more about deploying a Next.js application using Vercel, you can visit 
+[Deploying Your Next.js App](https://nextjs.org/learn-pages-router/basics/deploying-nextjs-app/deploy). This page gives step-by-step instructions on deployment, including 
+how to create a Vercel Account at https://vercel.com/signup using your GitHub account and how to import your repository at https://vercel.com/import/git.
