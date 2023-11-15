@@ -57,7 +57,7 @@ Dependencies Used
 
 REST vs GraphQL
 
-Anyone building a development project using the Storyblok CMS has to make a tough decision somewhere along the line: REST, or GraphQL? On the surface, 
+Any developer building a project using the Storyblok CMS (or most other headless CMS's, for that matter) has to make a tough decision somewhere along the line: REST, or GraphQL? On the surface, 
 this might seem like a relatively easy choice. Both the Storyblok Content Delivery API and Management API are organized around REST, and most of Storyblok's
 documentation is written with this in mind. So, why deviate?
 - Single vs. Multiple Endpoints- A typical REST API usually requires data fetching from multiple different endpoints. This is inherently slower than GraphQL, 
