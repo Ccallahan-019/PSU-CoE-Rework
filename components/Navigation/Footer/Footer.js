@@ -3,7 +3,7 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 const Footer = ({ blok }) => {
     return (
         <div
-            className="sm:px-3 py-4 md:py-6 flex flex-col sm:flex-row gap-8 sm:gap-10 lg:gap-16 items-center justify-center text-white text-sm font-robotoCondensed bg-gradient-to-br from-[#001E44] from-30% via-[#1B3C76] via-[70%] to-[#000321] to-100%" 
+            className="px-3 lg:px-0 py-4 md:py-6 flex flex-col sm:flex-row gap-8 sm:gap-10 lg:gap-16 items-center justify-center text-white text-sm font-robotoCondensed bg-gradient-to-br from-[#001E44] from-30% via-[#1B3C76] via-[70%] to-[#000321] to-100%" 
             {...storyblokEditable(blok)}
         >
             <div>
