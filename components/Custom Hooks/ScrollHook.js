@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const onScroll = (pixels) => {
+const useScroll = (pixels) => {
 
     const [Scrolled, setScrolled] = useState(false); // State used to capture whether or not the user has scrolled
 
@@ -23,4 +23,4 @@ const onScroll = (pixels) => {
     return Scrolled;
 };
 
-export default onScroll;
+export default useScroll;

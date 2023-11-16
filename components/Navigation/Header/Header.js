@@ -1,12 +1,12 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
-import onScroll from "@/components/Custom Hooks/ScrollHook";
+import useScroll from "@/components/Custom Hooks/ScrollHook";
 import Link from "next/link";
 
 export default function Header({ blok }) {
     const bgTransparent = "absolute w-full bg-transparent";
     const bgBackground = "absolute w-full bg-gradient-to-r from-[#001E44] from-30% via-[#1B3C76] via-[85%] to-[#000321] to-100%";
 
-    const isScrolled = onScroll(120);
+    const isScrolled = useScroll(120);
 
     return (
         <header>
