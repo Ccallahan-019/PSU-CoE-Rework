@@ -34,7 +34,7 @@ const IEngineerSpotlight = ({ blok }) => {
                 <iframe
                     className={clicked ? videoShown : "h-0 w-0"}
                     src={blok?.video.filename}
-                    frameborder="0" allow="fullscreen; picture-in-picture"
+                    frameBorder="0" allow="fullscreen; picture-in-picture"
                 ></iframe>
             </div>
             <div className="h-fit flex flex-col lg:grid lg:grid-cols-2 items-center bg-slate-300" {...storyblokEditable(blok)}>
