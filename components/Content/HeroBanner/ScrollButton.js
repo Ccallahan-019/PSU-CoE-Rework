@@ -17,13 +17,11 @@ const ScrollButton = ({ blok }) => {
 
     return (
         <div>
-            <div className="mt-5 mb-16 sm:mb-8 h-fit flex flex-col justify-center items-center" {...storyblokEditable(blok)}>
-                <div className="">
+            <div className="mt-5 mb-16 sm:mb-8 h-fit flex flex-col gap-2 justify-center items-center" {...storyblokEditable(blok)}>
                 <img
                     className="w-12 animate-bounce"
                     src={blok?.arrow.filename}
                 />
-                </div>
                 <button
                     id="scrollButton"
                     className=" text-white text-sm hover:text-base uppercase font-roboto"
