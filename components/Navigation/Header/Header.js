@@ -12,7 +12,7 @@ export default function Header({ blok }) {
         <header>
             <div id="header-container" className="fixed z-10 w-full" {...storyblokEditable(blok)}>
                 <nav className={isScrolled ? bgBackground : bgTransparent}>
-                    <div id="nav-container" className="mx-4 sm:mx-10 md:mx-16 mt-3 mb-2">
+                    <div id="nav-container" className="mx-4 sm:mx-10 :mx-16 lg:mt-3 lg:mb-2">
                         <div className="relative flex">
                             <div className="w-fit mr-6 flex items-center">
                                 <Link href={blok?.link.cached_url}>
