@@ -5,7 +5,7 @@ const ScrollButton = ({ blok }) => {
     useEffect(() => {
         const scrollButton = document.getElementById("scrollButton");
         const bottomDiv = document.getElementById("bottomDiv")
-        const divStartingTop = bottomDiv.getBoundingClientRect().top;
+        const divStartingTop = (bottomDiv.getBoundingClientRect().top + 10);
 
         const scrollHandler = () => { //Smooth scroll to the bottom of the scroll button element
             window.scrollTo({top: divStartingTop, behavior: "smooth"});
@@ -17,7 +17,7 @@ const ScrollButton = ({ blok }) => {
 
     return (
         <div>
-            <div className="mt-5 mb-20 xs:mb-8 h-fit flex flex-col gap-2 justify-center items-center" {...storyblokEditable(blok)}>
+            <div className="mt-10 mb-[10vh] xs:mb-8 h-fit flex flex-col gap-2 justify-center items-center" {...storyblokEditable(blok)}>
                 <img
                     className="w-12 animate-bounce"
                     src={blok?.arrow.filename}
