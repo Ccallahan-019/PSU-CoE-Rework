@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a modernized redesign of the Penn State College of Engineering website that leverages the 
+This project is a modernized redesign of the [Penn State College of Engineering Website](https://www.engr.psu.edu) that leverages the 
 combined capabilities of the Next.js framework, the GraphQL API, and the Storyblok Headless CMS.
 
 ### Deployed Site
@@ -117,23 +117,25 @@ how to create a Vercel Account at https://vercel.com/signup using your GitHub ac
 ## Progress Report
 
 - Navigation has been overhauled. Each dropdown menu found in the header has been condensed to include only the categories used in the corresponding tabs of the current CoE website 
-(excluding quick links). Current plans include a seperate page for each category, rather than a header that includes over 130 tabs (some of which are repeated multiple times). 
+(excluding quick links). Current plans include a seperate page for each category. 
 A dedicated side bar has been added; this is now where the search bar and quick links can be found. A **Hotline** button has been put in place of the **Directory** button, which has 
 been moved into the quick links.
 - Various cosmetic changes have been implemented, including but not limited to:
-  - Placeholder text in the search bar has been changed (Enhanced By Google seems a bit outdated)
+  - Placeholder text in the search bar has been changed
   - The **Give Now** button now reads **Donate** (Give Now reads as mildly demanding. Just a personal take)
-  - There is now an **I Engineer** title in the I Engineer section of content. Dedicating an entire section to a topic with the only direct reference to said topic being a button at the 
-  bottom seems like an oversight.
-  - The large and unnecessary blank side margins have been removed.
-- Responsiveness has been drastically improved
+  - There is now an **I Engineer** title in the I Engineer section of content.
+  - The blank side margins have been removed.
+- Responsiveness has been drastically improved.
 - All links are active, but internal links all route to a **Page Under Construction** placeholder page. This will be replaced with legitimate content as new pages are added.
 - Work on additional pages will start once the remaining content from the landing page is ported over.
 
 ## Sources
 
-This site is a redesigned version of the Penn State University College of Engineering Website, and therefore, all content (including text, images, and video files) was sourced from 
-the current College of Engineering website, which can be found at https://www.engr.psu.edu/.
+- This site is a redesigned version of the Penn State University College of Engineering Website, and therefore, all content (including text, images, and video files) was sourced from 
+the current College of Engineering website, which can be found at https://www.engr.psu.edu.
+- Due to the fact that this project is development and stack oriented (rather than design oriented) in nature, some stylistic aspects have been sourced from the Penn State 
+University landing page, which can be found at https://psu.edu, and used as a basis for the CSS implemented in this project. This is also an effort to show how the current CoE 
+website could be converted to implement design choices used by the main Penn State web brand. ***Note: This is reference to stylistic choices, not the code used in the landing page itself.***
 
 ## License
 
