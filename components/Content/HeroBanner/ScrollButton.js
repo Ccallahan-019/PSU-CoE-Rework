@@ -8,10 +8,10 @@ const ScrollButton = ({ blok }) => {
     useEffect(() => {
         const scrollButton = document.getElementById("scrollButton");
         const bottomDiv = document.getElementById("bottomDiv")
-        const divStartingTop = bottomDiv.getBoundingClientRect().top;
 
         const scrollHandler = () => { //Smooth scroll to the bottom of the scroll button element
-            const scrollValue = media ? (divStartingTop - 49) : (divStartingTop - 74);
+            const divDistance = window.scrollY + bottomDiv.getBoundingClientRect().top;
+            const scrollValue = media ? (divDistance - 49) : (divDistance - 74);
             window.scrollTo({top: scrollValue, behavior: "smooth"});
         };
 
