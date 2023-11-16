@@ -1,15 +1,17 @@
 import { storyblokEditable } from "@storyblok/react";
 import { useEffect } from "react";
+import useMediaQuery from "@/components/Custom Hooks/MediaQueryHook";
 
 const ScrollButton = ({ blok }) => {
+    const media = useMediaQuery("(max-height: 800px)")
+
     useEffect(() => {
         const scrollButton = document.getElementById("scrollButton");
         const bottomDiv = document.getElementById("bottomDiv")
-        const divStartingTop = (bottomDiv.getBoundingClientRect().top - 45);
 
         const scrollHandler = () => { //Smooth scroll to the bottom of the scroll button element
-            window.scrollTo({top: divStartingTop, behavior: "smooth"});
-            console.log(divStartingTop);
+            const scrollValue = media ? (bottomDiv.getBoundingClientRect().top - 49) : (bottomDiv.getBoundingClientRect().top - 74);
+            window.scrollTo({top: scrollValue, behavior: "smooth"});
         };
 
         scrollButton.addEventListener("click", scrollHandler);
