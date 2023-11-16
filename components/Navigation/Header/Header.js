@@ -1,30 +1,12 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
-import { useEffect, useState } from "react";
+import onScroll from "@/components/Custom Hooks/ScrollHook";
 import Link from "next/link";
 
 export default function Header({ blok }) {
     const bgTransparent = "absolute w-full bg-transparent";
     const bgBackground = "absolute w-full bg-gradient-to-r from-[#001E44] from-30% via-[#1B3C76] via-[85%] to-[#000321] to-100%";
-    let scrollValue;
 
-    useEffect(() => {
-        scrollValue = window.scrollY;
-    })
-
-    const [isScrolled, setIsScrolled] = useState(scrollValue > 120 ? true : false); // Set scroll state based on how far window has been scrolled
-
-    useEffect(() => {
-        function onScroll() {
-            if (window.scrollY > 120) {
-                setIsScrolled(true); // If the user scrolls past 120px vertically, set state to true
-            } else {
-                setIsScrolled(false); // If not, set state to false
-            };
-        };
-
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-    });
+    const isScrolled = onScroll(120);
 
     return (
         <header>

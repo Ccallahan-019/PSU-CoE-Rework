@@ -12,13 +12,12 @@ const useMediaQuery = (query) => {
 
       const mediaHandler = () => {
         setMatched(mediaMatched.matches); //Event handler to change state if browser size changes to match query
-    }
-      window.addEventListener("resize", mediaHandler);
+      }
 
+      window.addEventListener("resize", mediaHandler);
       return () => window.removeEventListener("resize", mediaHandler); //Remove listener on unmount to avoid memory leaks
     });
-
-    return matched;
+  return matched;
 }
 
 export default useMediaQuery;
