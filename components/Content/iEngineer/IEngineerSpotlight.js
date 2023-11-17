@@ -21,18 +21,20 @@ const IEngineerSpotlight = ({ blok }) => {
                         src={blok?.spotlight_image.filename}
                     />
                     <div className={clicked ? "w-full h-full flex flex-col gap-3 justify-center transition-[width] duration-[800ms]" : "w-0 h-full flex flex-col gap-2 justify-center"}>
-                        <button
-                            onClick={toggleVideo}
-                            className="pr-1 md:pr-1.5 w-full flex gap-1 items-center justify-end hover:font-semibold hover:opacity-[0.7]"
-                        >
-                            <img
-                                className="h-[12px] w-[12px] mt-[2px]"
-                                src={blok?.close_image.filename}
-                            />
-                            <p className={clicked ? "text-white uppercase font-robotoSlab" : "hidden" }>
-                                Close
-                            </p>
-                        </button>
+                        <div className="w-full flex justify-end">
+                            <button
+                                onClick={toggleVideo}
+                                className="pr-1 md:pr-1.5 flex gap-1 items-center hover:font-semibold hover:opacity-[0.7]"
+                            >
+                                <img
+                                    className="h-[12px] w-[12px] mt-[2px]"
+                                    src={blok?.close_image.filename}
+                                />
+                                <p className={clicked ? "text-white uppercase font-robotoSlab" : "hidden" }>
+                                    Close
+                                </p>
+                            </button>
+                        </div>
                         <div className="w-full flex justify-center items-center">
                             <iframe
                                 className="w-full h-[155px] xxs:h-[200px] xs:h-[260px] sm:h-[360px] md:h-[430px] lg:h-[280px] xl:h-[350px] 2xl:h-[425px]"
