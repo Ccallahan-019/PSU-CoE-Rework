@@ -134,13 +134,13 @@ been moved into the quick links.
 back to the home page). This will be replaced with legitimate content as new pages are added.
 - Work on additional pages will start once the remaining content from the landing page is ported over.
 - For now, the search bar is purely cosmetic. It will become fully functional when at least one more page has been added.
-- At the moment, `<img />` tags have been used as image containers. These will be replaced with `<Image>` elements some time in the near future for the sake of optimization.
+- At the moment, `<img />` tags have been used as image containers. These will be replaced with `<Image>` elements sometime in the near future for the sake of optimization.
 - Current Priorities
-  1. *Accessibility*
-  2. Responsiveness
-  3. Remaining landing page content
-  4. Clean up CSS
-  5. Additional pages
+  - *Accessibility*
+  - Responsiveness
+  - Remaining landing page content
+  - Clean up CSS
+  - Additional pages
 
 **This section will be updated as work progresses and improvements are made.**
 
