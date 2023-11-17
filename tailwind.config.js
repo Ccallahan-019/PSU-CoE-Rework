@@ -31,7 +31,8 @@ module.exports = {
         }
       },
       screens: {
-        'xs': '450px'
+        'xs': '450px',
+        'xxs': '320px'
       }
     },
   },
