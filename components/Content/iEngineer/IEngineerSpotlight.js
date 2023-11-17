@@ -14,7 +14,7 @@ const IEngineerSpotlight = ({ blok }) => {
     return (
         <div>
             <div className="h-fit flex flex-col lg:grid lg:grid-cols-2 items-center bg-slate-300" {...storyblokEditable(blok)}>
-                <div className="w-full h-[300px] xxs:h-[425px] xs:h-[530px] flex items-center justify-center bg-slate-500">
+                <div className="w-full h-[300px] xxs:h-[425px] xs:h-[530px] flex items-center justify-center bg-gradient-to-br from-slate-500 from-30% via-slate-400 via-[65%] to-slate-600 to-100%">
                     <img
                         onClick={toggleVideo}
                         className={clicked ? "h-auto w-0" : "h-auto w-auto cursor-pointer"}
@@ -44,7 +44,7 @@ const IEngineerSpotlight = ({ blok }) => {
                         </div>
                     </div>
                 </div>
-                <div className="max-h-fit flex flex-col gap-2 lg:gap-5 xl:gap-8 px-6 py-5 md:px-20 lg:pl-5 lg:pr-12 xl:pr-28">
+                <div className="max-h-fit flex flex-col gap-2 lg:gap-5 xl:gap-8 px-6 py-5 md:px-20 lg:self-center">
                     <div className="pb-2 flex flex-col gap-1 font-robotoSlab">
                         <h1 className="text-3xl font-bold">
                             {blok?.quote_first_line}
