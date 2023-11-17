@@ -23,7 +23,7 @@ const ScrollButton = ({ blok }) => {
             <div className="h-56 xs:h-32 flex flex-col gap-4 xs:gap-2 justify-center items-center" {...storyblokEditable(blok)}>
                 <img
                     className="w-12 animate-bounce"
-                    src={blok?.arrow.filename}
+                    src={blok?.arrow?.filename}
                 />
                 <button
                     id="scrollButton"

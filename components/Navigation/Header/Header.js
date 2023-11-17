@@ -1,12 +1,12 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
-import useScroll from "@/components/Custom Hooks/ScrollHook";
+import useScrollState from "@/components/Custom Hooks/ScrollHook";
 import Link from "next/link";
 
 export default function Header({ blok }) {
     const bgTransparent = "absolute w-full bg-transparent";
     const bgBackground = "absolute w-full bg-gradient-to-r from-[#001E44] from-30% via-[#1B3C76] via-[85%] to-[#000321] to-100%";
 
-    const isScrolled = useScroll(120);
+    const isScrolled = useScrollState(120);
 
     return (
         <header>
@@ -15,16 +15,16 @@ export default function Header({ blok }) {
                     <div id="nav-container" className="mx-4 sm:mx-10 :mx-16 lg:mt-3 lg:mb-2">
                         <div className="relative flex">
                             <div className="w-fit mr-6 flex items-center">
-                                <Link href={blok?.link.cached_url}>
+                                <Link href={blok?.link?.cached_url}>
                                     <img
                                         className="w-[215px]"
-                                        src={blok?.header_logo.filename}
+                                        src={blok?.header_logo?.filename}
                                     />
                                 </Link>
                             </div>
                             <div className="flex gap-3 items-center justify-end w-full">
                                 <ul className="hidden xl:flex items-center">
-                                    {blok?.header_menu.map((nestedBlok) => (
+                                    {blok?.header_menu?.map((nestedBlok) => (
                                         <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                                     ))}
                                 </ul>
@@ -35,7 +35,7 @@ export default function Header({ blok }) {
                                         ))}
                                     </ul>
                                 </div>
-                                {blok?.side_bar.map((nestedBlok) => (
+                                {blok?.side_bar?.map((nestedBlok) => (
                                     <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                                 ))}
                             </div>

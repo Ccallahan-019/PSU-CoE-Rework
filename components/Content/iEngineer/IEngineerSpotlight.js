@@ -13,12 +13,12 @@ const IEngineerSpotlight = ({ blok }) => {
 
     return (
         <div>
-            <div className="h-fit flex flex-col lg:grid lg:grid-cols-2 items-center bg-slate-300" {...storyblokEditable(blok)}>
+            <div className="h-fit flex flex-col lg:grid lg:grid-cols-2 items-center bg-slate-200" {...storyblokEditable(blok)}>
                 <div className="w-full h-[300px] xxs:h-[425px] xs:h-[530px] flex items-center justify-center bg-gradient-to-br from-slate-500 from-30% via-slate-400 via-[65%] to-slate-600 to-100%">
                     <img
                         onClick={toggleVideo}
-                        className={clicked ? "h-auto w-0" : "h-auto w-auto cursor-pointer"}
-                        src={blok?.spotlight_image.filename}
+                        className={clicked ? "h-auto w-0" : "w-full apsect-[1/1] max-w-[560px] cursor-pointer"}
+                        src={blok?.spotlight_image?.filename}
                     />
                     <div className={clicked ? "w-full h-full flex flex-col gap-3 justify-center transition-[width] duration-[800ms]" : "w-0 h-full flex flex-col gap-2 justify-center"}>
                         <div className="w-full flex justify-end">
@@ -28,7 +28,7 @@ const IEngineerSpotlight = ({ blok }) => {
                             >
                                 <img
                                     className="h-[12px] w-[12px] mt-[2px]"
-                                    src={blok?.close_image.filename}
+                                    src={blok?.close_image?.filename}
                                 />
                                 <p className={clicked ? "text-white uppercase font-robotoSlab" : "hidden" }>
                                     Close
@@ -61,7 +61,7 @@ const IEngineerSpotlight = ({ blok }) => {
                             {blok?.credit_position}
                         </p>
                         <div className="h-fit flex justify-center">
-                            {blok?.button.map((nestedBlok) => (
+                            {blok?.button?.map((nestedBlok) => (
                                 <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                             ))}
                         </div>

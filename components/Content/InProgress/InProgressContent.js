@@ -8,7 +8,7 @@ const InProgressContent = ({ blok }) => {
         >
             <img
                 className="h-[200px] sm:h-[280px]"
-                src={blok?.image.filename}
+                src={blok?.image?.filename}
             />
             <h1 className="px-4 text-4xl sm:text-6xl">
                 {blok?.header}

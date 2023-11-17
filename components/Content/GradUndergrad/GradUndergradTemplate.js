@@ -4,7 +4,7 @@ const GradUndergradTemplate = ({ blok }) => {
     return (
         <div
             {...storyblokEditable(blok)}
-            style={{ backgroundImage: `url(${blok?.background.filename})` }}
+            style={{ backgroundImage: `url(${blok?.background?.filename})` }}
             className="relative h-fit xs:h-[725px] bg-cover"
         >
             <div className="relative h-full py-4 xs:py-0 sm:px-2 lg:px-6 flex flex-col gap-2 sm:gap-4 md:gap-8 justify-center items-center text-center font-semibold">
@@ -14,7 +14,7 @@ const GradUndergradTemplate = ({ blok }) => {
                 <p className="text-base xs:text-xl px-1 sm:px-2 lg:px-32 font-robotoSlab">
                     {blok?.intro}
                 </p>
-                {blok?.content.map((nestedBlok) => (
+                {blok?.content?.map((nestedBlok) => (
                     <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                 ))}
             </div>

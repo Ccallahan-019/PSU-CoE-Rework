@@ -136,7 +136,6 @@ back to the home page). This will be replaced with legitimate content as new pag
 - For now, the search bar is purely cosmetic. It will become fully functional when at least one more page has been added.
 - At the moment, `<img />` tags have been used as image containers. These will be replaced with `<Image>` elements sometime in the near future for the sake of optimization.
 - Current Priorities
-  - *Accessibility*
   - Responsiveness
   - Remaining landing page content
   - Clean up CSS

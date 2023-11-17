@@ -17,7 +17,7 @@ const HeaderMenuTab = ({ blok }) => {
     return (
         <li className="w-fit mr-8 flex flex-col">
             <div>
-                <Link href={blok?.link.cached_url} {...storyblokEditable(blok)}>
+                <Link href={blok?.link?.cached_url} {...storyblokEditable(blok)}>
                     <button
                         onMouseEnter={displayDropdown}
                         onMouseLeave={hideDropdown}
@@ -33,12 +33,12 @@ const HeaderMenuTab = ({ blok }) => {
                         className="absolute flex flex-col w-fit"
                     >
                         <img
-                            src={blok.dropdown_icon.filename}
+                            src={blok?.dropdown_icon?.filename}
                             className="ml-[13px] mt-[-3px] mb-[1px] h-[19px] w-[30px]"
                         />
                         <div className="ml-[-10px] px-[10px] pb-2 w-[200px] flex flex-col justify-center text-blue-950 text-lg font-robotoCondensed bg-white/[0.95] rounded drop-shadow-2xl">
                             <ul className="flex flex-col gap-0.5">
-                                {blok?.dropdown_menu.map((nestedBlok) => (
+                                {blok?.dropdown_menu?.map((nestedBlok) => (
                                     <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                                 ))}
                             </ul>

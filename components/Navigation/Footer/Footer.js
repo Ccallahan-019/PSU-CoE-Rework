@@ -10,7 +10,7 @@ const Footer = ({ blok }) => {
             <div>
                 <img
                     className="h-10 md:h-12"
-                    src={blok?.logo.filename}
+                    src={blok?.logo?.filename}
                 />
             </div>
             <div className="flex flex-col gap-5 sm:gap-3 items-center">
@@ -27,7 +27,7 @@ const Footer = ({ blok }) => {
                 </div>
                 <img
                     className="h-[10px]"
-                    src={blok?.we_are_image.filename}
+                    src={blok?.we_are_image?.filename}
                 />
             </div>
         </div>

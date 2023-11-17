@@ -41,7 +41,7 @@ const SideBar = ({ blok }) => {
                 >
                     <img
                         className="mt-[1px] w-[21px] h-[21px]"
-                        src={blok?.search_icon.filename}
+                        src={blok?.search_icon?.filename}
                     />
                     <p className="hidden xl:block text-white text-lg uppercase font-robotoSlab">More</p>
                 </button>
@@ -51,7 +51,7 @@ const SideBar = ({ blok }) => {
                 >
                     <img
                         className="w-[65px] h-[50px]"
-                        src={blok?.icon.filename}
+                        src={blok?.icon?.filename}
                     />
                 </button>
             </div>
@@ -60,7 +60,7 @@ const SideBar = ({ blok }) => {
                     <div className="flex">
                         <img
                             className="flex h-auto max-h-[35px] xs:max-h-[50px] lg:hidden"
-                            src={blok?.side_logo.filename}
+                            src={blok?.side_logo?.filename}
                         />
                         <button
                             onClick={toggleSideNav}
@@ -68,25 +68,25 @@ const SideBar = ({ blok }) => {
                         >
                             <img
                                 className="mt-[1.5px] h-[13px] w-[13px]"
-                                src={blok?.close_image.filename}
+                                src={blok?.close_image?.filename}
                             />
                             <h1 className="uppercase text-sm xs:text-base align-top font-robotoSlab hover:font-semibold">Close</h1>
                         </button>
                     </div>
                     <div className="w-full pl-2 flex flex-col gap-5 xs:gap-8 justify-center items-center">
                         <ul className="h-10 flex gap-2 xs:gap-3 items-center justify-end">
-                            {blok?.side_buttons.map((nestedBlok) => (
+                            {blok?.side_buttons?.map((nestedBlok) => (
                                 <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                             ))}
                         </ul>
-                        {blok?.search_bar.map((nestedBlok) => (
+                        {blok?.search_bar?.map((nestedBlok) => (
                             <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                         ))}
                     </div>
                 </div>
                 <div className="w-full xs:pt-5 flex flex-col sm:grid sm:grid-cols-2 gap-1 xs:gap-4 sm:gap-8 items-center sm:items-start sm:justify-items-center">
                     <ul className="pt-4 pb-3 xs:py-5 sm:pt-10 flex flex-col gap-2 xs:gap-4">
-                        {blok?.side_menu.map((nestedBlok) => (
+                        {blok?.side_menu?.map((nestedBlok) => (
                             <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                         ))}
                     </ul>
@@ -95,12 +95,12 @@ const SideBar = ({ blok }) => {
                             {blok?.links_header}
                         </h1>
                         <ul className="w-[85%] xs:w-[90%]">
-                            {blok?.quick_links.map((nestedBlok) => (
+                            {blok?.quick_links?.map((nestedBlok) => (
                                 <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                             ))}
                         </ul>
                         <div className="pb-4 w-full h-[70px] xs:h-[140px] flex items-end justify-end">
-                            {blok?.social_media.map((nestedBlok) => (
+                            {blok?.social_media?.map((nestedBlok) => (
                                 <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                             ))}
                         </div>

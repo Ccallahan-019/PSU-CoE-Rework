@@ -6,7 +6,7 @@ const SocialMedia = ({ blok }) => {
             <p className="align-center">
                 {blok?.tagline}
             </p>
-            {blok?.media_links.map((nestedBlok) => (
+            {blok?.media_links?.map((nestedBlok) => (
                 <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
             ))}
         </div>

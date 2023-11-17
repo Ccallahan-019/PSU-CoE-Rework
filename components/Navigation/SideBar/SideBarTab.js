@@ -2,8 +2,8 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react"
 import { useState} from "react";
 
 const SideBarTab = ({ blok }) => {
-    const downArrow = blok?.dropdown_hidden_image.filename;
-    const upArrow = blok?.dropdown_shown_image.filename;
+    const downArrow = blok?.dropdown_hidden_image?.filename;
+    const upArrow = blok?.dropdown_shown_image?.filename;
 
     // When user clicks on each tab, show or hide dropdown menu (depending on current state)
     const [shown, setShown] = useState(false);
@@ -34,7 +34,7 @@ const SideBarTab = ({ blok }) => {
                 </button>
                 <div className={shown ? "flex flex-col font-robotoCondensed drop-shadow-2xl" : "hidden"}>
                     <ul className="flex flex-col px-3 pb-2 xs:pb-4">
-                        {blok?.dropdown_menu.map((nestedBlok) => (
+                        {blok?.dropdown_menu?.map((nestedBlok) => (
                             <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                         ))}
                     </ul>

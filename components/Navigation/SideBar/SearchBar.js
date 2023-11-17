@@ -10,7 +10,7 @@ const SearchBar = ({ blok }) => {
             />
             <button className="absolute px-2 py-2 flex justify-end items-center">
                 <img
-                    src={blok?.search_icon.filename}
+                    src={blok?.search_icon?.filename}
                 />
             </button>
         </div>

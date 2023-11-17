@@ -6,7 +6,7 @@ const GradContent = ({ blok }) => {
             <div className="relative aspect-[7/4] w-full max-w-[520px] lg:order-last lg:justify-self-end rounded-lg md:shadow-2xl">
                 <img
                     className="absolute h-full w-full rounded-lg"
-                    src={blok?.image.filename}
+                    src={blok?.image?.filename}
                 />
                 <div className="absolute h-full w-full bg-gradient-to-bl from-[#001E44] to-65% rounded-lg"></div>
             </div>
@@ -14,7 +14,7 @@ const GradContent = ({ blok }) => {
                 <p className="px-1 text-base xs:text-lg font-robotoSlab">
                     {blok?.description}
                 </p>
-                {blok?.button.map((nestedBlok) => (
+                {blok?.button?.map((nestedBlok) => (
                     <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
                 ))}
             </div>
