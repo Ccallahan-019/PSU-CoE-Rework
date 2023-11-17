@@ -24,6 +24,11 @@ Configurations Used
 - Tailwind CSS
 - App Router
 
+Overview
+- Next.js is an open source React framework, created by Vercel, designed to build incredibly fast, optimized, and user-oriented applications. 
+Some of it's benefits include: requiring next to no configuration, access to both server side rendering and static generation at once, automatic 
+code splitting, TypeScript support (if you're into that sort of thing), and Fast Refresh (a personal favorite).
+
 Key Features
 - Dynamic Routing
   - By combining the `generateStaticParams` function and the Catch-all Dynamic Segment `[...slug]`, 
@@ -57,9 +62,9 @@ Dependencies Used
 
 REST vs GraphQL
 
-Any developer building a project using the Storyblok CMS (or most other headless CMS's, for that matter) has to make a tough decision somewhere along the line: REST, or GraphQL? On the surface, 
-this might seem like a relatively easy choice. Both the Storyblok Content Delivery API and Management API are organized around REST, and most of Storyblok's
-documentation is written with this in mind. So, why deviate?
+If you're a developer planning on building a project using a headless CMS, you will soon be faced with a pivotal decision: REST, or GraphQL? If you're 
+using Storyblok, than this may seem like a relatively easy choice (on the surface, at least). Both the Storyblok Content Delivery API and Management API 
+are organized around REST, and most of Storyblok's documentation is written with this in mind. So, why deviate?
 - Single vs. Multiple Endpoints- A typical REST API usually requires data fetching from multiple different endpoints. This is inherently slower than GraphQL, 
 where only one endpoint is required to fetch data.
 - Overfetching/Underfetching- REST APIs tend to suffer from overfetching and underfetching issues that stem from the fixed structures of their endpoints.
@@ -74,7 +79,6 @@ and replace `YOUR_TOKEN` with your Storyblok API token. You might also need to a
 ```
 https://gapi-us-browser.storyblok.com
 ```
-
 ![Storyblok GraphQL Playground](./public/Screenshot%202023-11-15%20125347.png)
 
 You can find an example of a GraphQL query made to the Apollo client in [`app/[...slug]/page.js`](./app/[...slug]/page.js) and [`app/page.js`](./app/page.js).
@@ -126,8 +130,20 @@ been moved into the quick links.
   - There is now an **I Engineer** title in the I Engineer section of content.
   - The blank side margins have been removed.
 - Responsiveness has been drastically improved.
-- All links are active, but internal links all route to a **Page Under Construction** placeholder page. This will be replaced with legitimate content as new pages are added.
+- All links are active, but internal links all route to a **Page Under Construction** placeholder page (with the exception of the link attached to the header logo, which takes the user
+back to the home page). This will be replaced with legitimate content as new pages are added.
 - Work on additional pages will start once the remaining content from the landing page is ported over.
+- For now, the search bar is purely cosmetic. It will become fully functional when at least one more page has been added.
+- At the moment, `<img />` tags have been used as image containers. These will be replaced with `<Image>` elements some time in the near future for the sake of optimization.
+- Current Priorities
+  1. *Accessibility*
+  2. Responsiveness
+  3. Remaining landing page content
+  4. Clean up CSS
+  5. Additional pages
+
+**This section will be updated as work progresses and improvements are made.**
+
 
 ## Sources
 
