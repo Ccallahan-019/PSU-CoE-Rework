@@ -26,7 +26,7 @@ Configurations Used
 
 Overview
 - Next.js is an open source React framework, created by Vercel, designed to build incredibly fast, optimized, and user-oriented applications. 
-Some of it's benefits include: requiring next to no configuration, access to both server side rendering and static generation at once, automatic 
+Some of its benefits include: requiring next to no configuration, access to both server side rendering and static generation at once, automatic 
 code splitting, TypeScript support (if you're into that sort of thing), and Fast Refresh (a personal favorite).
 
 Key Features
@@ -60,7 +60,7 @@ Dependencies Used
 - `graphql`
 - `@apollo/experimental-nextjs-app-support` (an official Apollo Client library built to enhance the compatibility of Apollo and Next.js 13+)
 
-REST vs GraphQL
+REST API vs GraphQL API
 
 If you're a developer planning on building a project using a headless CMS, you will soon be faced with a pivotal decision: REST, or GraphQL? If you're 
 using Storyblok, than this may seem like a relatively easy choice (on the surface, at least). Both the Storyblok Content Delivery API and Management API 
