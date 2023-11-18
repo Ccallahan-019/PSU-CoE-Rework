@@ -6,6 +6,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'robotoSlab':['robotoSlab', 'ui-sans-serif'],
+      'robotoCondensed': ['var(--font-roboto-condensed)', 'ui-sans-serif']
+    },
     extend: {
       fontFamily: {
         robotoSlab: ['var(--font-roboto-slab)'],
