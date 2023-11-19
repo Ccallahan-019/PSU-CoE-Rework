@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const HeaderMenuTab = ({ blok }) => {
     const defaultButtonStyle = "pl-2 text-base text-white font-robotoCondensed border-l-2";
-    const hoverButtonStyle = "pl-2 text-lg text-slate-400 font-bold font-robotoCondensed";
+    const hoverButtonStyle = "pl-[9.5px] text-slate-400 font-bold font-robotoCondensed";
 
     const [hovered, setHovered] = useState(false); // Hover state used to display dropdown menu
     const displayDropdown = () => {

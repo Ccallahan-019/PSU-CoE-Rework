@@ -16,9 +16,11 @@ const UndergradContent = ({ blok }) => {
                 <p className="px-1 text-base font-robotoSlab xs:text-lg">
                     {blok?.description}
                 </p>
-                {blok?.button?.map((nestedBlok) => (
-                    <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-                ))}
+                <div>
+                    {blok?.button?.map((nestedBlok) => (
+                        <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+                    ))}
+                </div>
             </div>
         </div>
     );
