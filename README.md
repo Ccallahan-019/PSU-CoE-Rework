@@ -60,14 +60,14 @@ Dependencies Used
 - `graphql`
 - `@apollo/experimental-nextjs-app-support` (an official Apollo Client library built to enhance the compatibility of Apollo and Next.js 13+)
 
-REST API vs GraphQL API
+REST vs GraphQL
 
 If you're a developer planning on building a project using a headless CMS, you will soon be faced with a pivotal decision: REST, or GraphQL? If you're 
 using Storyblok, than this may seem like a relatively easy choice (on the surface, at least). Both the Storyblok Content Delivery API and Management API 
 are organized around REST, and most of Storyblok's documentation is written with this in mind. So, why deviate?
-- Single vs. Multiple Endpoints- A typical REST API usually requires data fetching from multiple different endpoints. This is inherently slower than GraphQL, 
-where only one endpoint is required to fetch data.
-- Overfetching/Underfetching- REST APIs tend to suffer from overfetching and underfetching issues that stem from the fixed structures of their endpoints.
+- Single vs. Multiple Endpoints- A typical RESTful API usually requires data fetching from multiple different endpoints. This is inherently slower than an API 
+using GraphQL, where only one endpoint is required to fetch data.
+- Overfetching/Underfetching- RESTful APIs tend to suffer from overfetching and underfetching issues that stem from the fixed structures of their endpoints.
 Either the endpoint in question returns unnecessary data, or it doesn't return enough data, requiring more fetches to other endpoints to retrieve whatever data is 
 still needed (usually resulting in overfetching... See the problem?). On the other hand, with GraphQL, you can request exactly the data you need at any given time.
 - Strongly Typed Schemas- GraphQL uses **Schema Definition Language (SDL)** to define an API's schema. This means you always have a clear understanding of the API's 
