@@ -3,7 +3,7 @@
 ## Description
 
 This project is a modernized redesign of the [Penn State College of Engineering Website](https://www.engr.psu.edu) that leverages the 
-combined capabilities of the Next.js framework, the GraphQL API, and the Storyblok Headless CMS.
+combined capabilities of the Next.js framework, the GraphQL API query language, and the Storyblok Headless CMS.
 
 ### Deployed Site
 
