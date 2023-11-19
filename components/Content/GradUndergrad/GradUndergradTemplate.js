@@ -5,13 +5,13 @@ const GradUndergradTemplate = ({ blok }) => {
         <div
             {...storyblokEditable(blok)}
             style={{ backgroundImage: `url(${blok?.background?.filename})` }}
-            className="relative h-fit xs:h-[725px] bg-cover"
+            className="bg-cover lg:h-[725px]"
         >
-            <div className="relative h-full py-4 xs:py-0 sm:px-2 lg:px-6 flex flex-col gap-2 sm:gap-4 md:gap-8 justify-center items-center text-center font-semibold">
-                <h1 className="text-2xl xs:text-4xl text-blue-950 font-robotoSlab">
+            <div className="h-full py-4 flex flex-col gap-3 justify-center items-center text-center font-semibold sm:px-2 sm:gap-4 md:gap-8 lg:px-5">
+                <h1 className="text-2xl text-blue-950 font-robotoSlab xs:text-4xl">
                     {blok?.header}
                 </h1>
-                <p className="text-base xs:text-xl px-1 sm:px-2 lg:px-32 font-robotoSlab">
+                <p className="px-1 text-base font-robotoSlab xs:text-xl xl:px-20">
                     {blok?.intro}
                 </p>
                 {blok?.content?.map((nestedBlok) => (
