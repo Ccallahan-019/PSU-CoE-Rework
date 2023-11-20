@@ -40,7 +40,7 @@ const Footer = ({ blok }) => {
                             <p className="w-auto text-white font-semibold border-slate-500 md:px-3 md:border-x-[1px]">
                                 {blok?.phone_number}
                             </p>
-                            <Link href={blok?.contact_link?.cached_url} className="text-white font-semibold">
+                            <Link href={blok?.contact_link?.cached_url} className="text-white font-semibold hover:underline hover:underline-offset-2">
                                 {blok?.contact}
                             </Link>
                         </div>
