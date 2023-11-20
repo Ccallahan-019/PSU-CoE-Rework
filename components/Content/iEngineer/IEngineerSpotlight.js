@@ -16,7 +16,7 @@ const IEngineerSpotlight = ({ blok }) => {
                         onClick={playVideo}>
                         <iframe
                             className="absolute w-full h-full"
-                            src={isClicked ? blok?.iframe_source?.cached_url : ""}
+                            src={isClicked ? blok?.iframe_source?.filename : ""}
                             frameBorder="0"
                             allow="autoplay; fullscreen">
                         </iframe>
