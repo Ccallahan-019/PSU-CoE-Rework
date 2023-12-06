@@ -111,12 +111,50 @@ Planning on using the Storyblok Headless CMS to manage the backend of your next 
 Combining Next.js and Storyblok? Use this [Storyblok Next.js 13 Guide](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial) to get started. (This guide uses 
 the **App Router** introduced in Next.js 13. If you are using an earlier version or have opted to use the **Pages Router**, check out [The Storyblok Next.js Ultimate Tutorial](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial)).
 
+### Getting Started with a Next.js/GraphQL/Storyblok Project- How to Mount this Stack
+
+1. Create Your Project- Start by creating a Next.js project. I recommend doing so with `create-next-app`, which takes care of most of the project's set up for you. In
+   the terminal, run:
+   ```
+   npx create-next-app@latest
+   ```
+2. Choose Your Configurations- After you have initialized the creation of your project, you should then see a series of prompts:
+   ```
+   What is your project named? my-app
+   Would you like to use TypeScript? No / Yes
+   Would you like to use ESLint? No / Yes
+   Would you like to use Tailwind CSS? No / Yes
+   Would you like to use `src/` directory? No / Yes
+   Would you like to use App Router? (recommended) No / Yes
+   Would you like to customize the default import alias (@/*)? No / Yes
+   What import alias would you like configured? @/*
+   ```
+   You are welcome to choose whichever configurations best suit the needs of your specific project, but if you are following this repository as a guide, your choices
+   should be:
+   ```
+   What is your project named? <your-project-name>
+   Would you like to use TypeScript? No
+   Would you like to use ESLint? Yes
+   Would you like to use Tailwind CSS? Yes
+   Would you like to use `src/` directory? No
+   Would you like to use App Router? (recommended) Yes
+   Would you like to customize the default import alias (@/*)? No
+   What import alias would you like configured? @
+   ```
+   After you've chosen your configurations, `create-next-app` will create a directory for your project and install the necessary dependencies based on your choices.
+
+3. Install Remaining Dependencies- After your project directory has been created, you'll need to install the remaining dependencies required to set your project up
+   with the Apollo Client, GraphQL, and Storyblok. In the terminal, navigate to the root of your project's directory and run:
+   ```
+   npm install @apollo/client@rc graphql @apollo/experimental-nextjs-app-support @storyblok/react
+   ```
+   Once the installation is finished, you should have everything you need to get started with this stack.
+
 
 ## Deployment- Vercel
 
 This site was deployed using Vercel. If you'd like to learn more about deploying a Next.js application using Vercel, you can visit 
-[Deploying Your Next.js App](https://nextjs.org/learn-pages-router/basics/deploying-nextjs-app/deploy). This page gives step-by-step instructions on deployment, including 
-how to create a Vercel Account at https://vercel.com/signup using your GitHub account and how to import your repository at https://vercel.com/import/git.
+[Deploying Your Next.js App](https://nextjs.org/learn-pages-router/basics/deploying-nextjs-app/deploy). This page gives step-by-step instructions on deployment, including how to create a Vercel Account at https://vercel.com/signup using your GitHub account and how to import your repository at https://vercel.com/import/git.
 
 ## Progress Report
 
