@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google';
 import { Roboto_Slab } from 'next/font/google';
 import { Roboto_Condensed } from 'next/font/google';
 import { ApolloWrapper } from '@/lib/ApolloProvider';
-import { GoogleAnalytics } from '@next/third-parties/google'
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -29,11 +29,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto_slab.variable} ${roboto_condensed.variable}`}>
       <body className={inter.className}>
+        <GoogleAnalytics />
         <ApolloWrapper>
           {children}
         </ApolloWrapper>
       </body>
-      <GoogleAnalytics gaId="G-QQL6PBRF35" />
     </html>
   );
 };
