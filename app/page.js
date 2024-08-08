@@ -29,13 +29,6 @@ export default async function Home() {
 
   return (
     <div>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQL6PBRF35"></script>
-      <script>
-        {window.dataLayer = window.dataLayer || []}
-        {function gtag(){dataLayer.push(arguments)}}
-        {gtag('js', new Date())}
-        {gtag('config', 'G-QQL6PBRF35')}
-      </script>
       <StoryblokStory story={data?.PageItem} />
     </div>
   );

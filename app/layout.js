@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import { Roboto_Slab } from 'next/font/google';
 import { Roboto_Condensed } from 'next/font/google';
 import { ApolloWrapper } from '@/lib/ApolloProvider';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
           {children}
         </ApolloWrapper>
       </body>
+      <GoogleAnalytics gaId="G-QQL6PBRF35" />
     </html>
   );
 };
