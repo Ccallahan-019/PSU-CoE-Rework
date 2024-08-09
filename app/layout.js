@@ -23,11 +23,6 @@ const roboto_condensed = Roboto_Condensed({
   variable: '--font-roboto-condensed'
 });
 
-export const metadata = {
-  title: 'PSU CoE Rework',
-  description: 'Penn State College of Engineering Website Rework',
-};
-
 export default function RootLayout({ children }) {
   useEffect(() => {
     analytics.page();
