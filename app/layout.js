@@ -1,3 +1,5 @@
+'use client'
+
 import { Inter } from 'next/font/google';
 import { Roboto_Slab } from 'next/font/google';
 import { Roboto_Condensed } from 'next/font/google';
